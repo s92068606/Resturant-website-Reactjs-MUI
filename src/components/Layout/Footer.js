@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <Box
-        sx={{ textAlign: "center", bgcolor: "#1A1A19", color: "white", p: 3 }}
+        sx={{ textAlign: "center", bgcolor: "#6B3CC9", color: "white", p: 3 }}
       >
         <Box
           sx={{
@@ -39,7 +39,7 @@ const Footer = () => {
             },
           }}
         >
-          All Rights Reserved &copy; Techinfo YT
+          All Rights Reserved &copy; Aska Shif 
         </Typography>
       </Box>
     </>

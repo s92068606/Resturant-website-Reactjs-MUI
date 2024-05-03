@@ -12,7 +12,7 @@ const Home = () => {
           <h1>Food Website</h1>
           <p>Best Food In India</p>
           <Link to="/menu">
-            <button>ORDER NOW</button>
+            <button>GET FREE CONSULTATION</button>
           </Link>
         </div>
       </div>

@@ -8,18 +8,21 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import Logo from "../../images/logo.svg";
-
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
+// Import your image
+import logo from './logo.png';
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  // hndle menu click
+
+  // handle menu click
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  //menu drawer
+
+  // menu drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography
@@ -27,32 +30,32 @@ const Header = () => {
         variant="h6"
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
-      >
-        <img src={Logo} alt="logo" height={"70"} width="200" />
-      </Typography>
+      ></Typography>
       <Divider />
       <ul className="mobile-navigation">
         <li>
           <NavLink activeClassName="active" to={"/"}>
-            Home
+            SERVICES
           </NavLink>
         </li>
+      
         <li>
-          <NavLink to={"/menu"}>Menu</NavLink>
+          <NavLink to={"/menu"}>ABOUT US</NavLink>
         </li>
         <li>
-          <NavLink to={"/about"}>About</NavLink>
+          <NavLink to={"/about"}>CONTACT US</NavLink>
         </li>
         <li>
-          <NavLink to={"/contact"}>Contact</NavLink>
+          <NavLink to={"/contact"}>CAREERS</NavLink>
         </li>
       </ul>
     </Box>
   );
+
   return (
     <>
       <Box>
-        <AppBar component={"nav"} sx={{ bgcolor: "black" }}>
+        <AppBar component={"nav"} sx={{ bgcolor: "#6B3CC9" }}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -66,29 +69,29 @@ const Header = () => {
             >
               <MenuIcon />
             </IconButton>
+            {/* Add your logo image here */}
+            <img src={logo} alt="Logo" style={{ marginRight: '10px', height: '40px', width: 'auto' }} />
             <Typography
               color={"goldenrod"}
               variant="h6"
               component="div"
               sx={{ flexGrow: 1 }}
-            >
-              <img src={Logo} alt="logo" height={"70"} width="250" />
-            </Typography>
+            ></Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <ul className="navigation-menu">
                 <li>
                   <NavLink activeClassName="active" to={"/"}>
-                    Home
+                    SERVICES
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/menu"}>Menu</NavLink>
+                  <NavLink to={"/menu"}>ABOUT US</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/about"}>About</NavLink>
+                  <NavLink to={"/about"}>CONTACT US</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/contact"}>Contact</NavLink>
+                  <NavLink to={"/contact"}>CAREERS</NavLink>
                 </li>
               </ul>
             </Box>
@@ -111,6 +114,7 @@ const Header = () => {
           </Drawer>
         </Box>
         <Box>
+          
           <Toolbar />
         </Box>
       </Box>
