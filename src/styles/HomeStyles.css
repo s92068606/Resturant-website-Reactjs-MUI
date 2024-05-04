@@ -16,41 +16,66 @@
   margin-right: 50px;
 }
 
-.home .headerContainer h1 {
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  font-size: 70px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: black;
+.rectangle-box {
+  border: 2px dashed #6B3CC9;
+  height: 200px;
+  margin-top: -108px;
+  position: absolute;
+  top: 516px;
+  left: 77px;
+  gap: 0px;
+  color: #6B3CC9;
+  max-width: 801px; /* Adjust the width as needed */
+  background-color: transparent; /* Optional: Add a background color */
+}
+
+.rectangle-box h2:first-of-type {
+  color: #000000; /* Change to your desired color */
+}
+
+.rectangle-box h2:last-of-type {
+  color: #6B3CC9; /* Change to your desired color */
 }
 
 .home .headerContainer p {
   margin-top: 15px;
   padding: 0;
-  font-size: 40px;
-  font-weight: lighter;
-  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Inter;
+  color: #6F6C90;
 }
 
 .headerContainer button {
-  background-color: #121619;
-  margin-top: 20px;
+  background-color: #F28D35;
+  margin-top: -150px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px 4px 4px 4px; /* Adjust border-radius */
   cursor: pointer;
-  height: 50px;
-  width: 180px;
+  height: 38px; /* Set height to 38px */
+  width: 214px; /* Set width to 214px */
+  padding: 12px 20px; /* Set padding */
+  gap: 8px;
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 14px; /* Set font size to 14px */
+  font-weight: 500; /* Set font weight to 700 */
+  font-family: Inter; /* Set font family to Inter */
+  line-height: 14px; /* Set line height to 14px */
+  letter-spacing: -0.02em; /* Set letter spacing */
+  text-align: left; /* Align text to the left */
+  position: absolute;
+  top: 382px;
+  left: 77px;
+  opacity: 1; /* Set opacity to 1 to make it visible */
 }
 
 .headerContainer button:hover {
-  background-color: #07090a;
+  background-color: #E1731D; /* Adjust hover background color if needed */
   cursor: pointer;
   transition: 0.3s ease-in;
 }
+
 
 /* mobile view  */
 
@@ -67,7 +92,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #121619;
+    background-color: #171912;
     color: white;
   }
   .home .headerContainer h1 {
